@@ -21,7 +21,7 @@ export class ContactForm extends Component {
   //trimitere formular
   handleSubmit = evt => {
     evt.preventDefault();
-    const { name, number } = this.state;
+   // const { name, number } = this.state;
     this.props.onSubmit({ ...this.state }); // Transmiterea datelor catre componenta parinte prin prop-ul onSubmit
     this.reset();
   };
